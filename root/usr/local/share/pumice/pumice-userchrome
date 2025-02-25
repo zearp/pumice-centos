@@ -1,0 +1,62 @@
+#!/bin/bash
+#
+
+set -euo pipefail
+
+# Remove the autostart script once it has done its job.
+#
+remove_autostart() {
+	rm "$HOME/.config/autostart/pumice-userchrome.desktop"
+}
+
+SOURCE="/usr/local/share/pumice/userChrome.css"
+
+# Newer Firefox versions keep the profile under ~/.config/mozilla; older
+# versions use ~/.mozilla directly. Try both, preferring the newer location.
+#
+MOZILLA_BASE=""
+for candidate in "$HOME/.config/mozilla" "$HOME/.mozilla"; do
+	if [ -f "$candidate/firefox/profiles.ini" ]; then
+		MOZILLA_BASE="$candidate"
+		break
+	fi
+done
+
+# Nothing to install, or Firefox has never been run yet — try again next login.
+#
+[ -f "$SOURCE" ] || exit 0
+[ -n "$MOZILLA_BASE" ] || exit 0
+
+INI="$MOZILLA_BASE/firefox/profiles.ini"
+
+# Resolve the default profile path the same way Firefox's own Profile Service does
+#
+profile_rel=$(awk -F= '/^\[Install/{ininstall=1} /^\[Profile/{ininstall=0} ininstall && /^Default=/{print $2; exit}' "$INI")
+
+if [ -z "${profile_rel:-}" ]; then
+	profile_rel=$(awk -F= '
+		/^\[Profile/{block=1; path=""; isdefault=0}
+		block && /^Path=/{path=$2}
+		block && /^Default=1/{isdefault=1}
+		block && /^\[/{if (isdefault && path) {print path; exit}}
+		END{if (isdefault && path) print path}
+	' "$INI")
+fi
+
+[ -n "${profile_rel:-}" ] || exit 0
+
+profile_dir="$MOZILLA_BASE/firefox/$profile_rel"
+[ -d "$profile_dir" ] || exit 0
+
+chrome_dir="$profile_dir/chrome"
+mkdir -p "$chrome_dir"
+
+# Only copy if missing or different, so this is cheap on every login
+#
+if ! cmp -s "$SOURCE" "$chrome_dir/userChrome.css" 2>/dev/null; then
+	cp "$SOURCE" "$chrome_dir/userChrome.css"
+fi
+
+remove_autostart
+
+exit 0

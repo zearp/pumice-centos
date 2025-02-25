@@ -1,0 +1,214 @@
+[apps/seahorse/windows/key-manager]
+height=480
+width=640
+
+[org/gnome/control-center]
+last-panel='system'
+
+[org/gnome/desktop/app-folders]
+folder-children=['']
+
+[org/gnome/desktop/background]
+picture-options='scaled'
+picture-uri='file:///usr/local/share/pumice/pumice-wallpaper.jpg'
+picture-uri-dark='file:///usr/local/share/pumice/pumice-wallpaper.jpg'
+
+[org/gnome/desktop/break-reminders/eyesight]
+play-sound=false
+
+[org/gnome/desktop/break-reminders/movement]
+play-sound=false
+
+[org/gnome/desktop/interface]
+clock-show-weekday=true
+color-scheme='prefer-dark'
+font-antialiasing='rgba'
+font-hinting='full'
+gtk-theme='Adwaita-dark'
+menubar-accel=''
+show-battery-percentage=true
+text-scaling-factor=1.00
+
+[org/gnome/desktop/notifications]
+show-banners=false
+
+[org/gnome/desktop/peripherals/keyboard]
+delay=uint32 350
+repeat-interval=uint32 30
+
+[org/gnome/desktop/peripherals/touchpad]
+natural-scroll=false
+two-finger-scrolling-enabled=true
+
+[org/gnome/desktop/screen-time-limits]
+daily-limit-enabled=false
+history-enabled=false
+
+[org/gnome/desktop/session]
+idle-delay=uint32 900
+
+[org/gnome/desktop/sound]
+event-sounds=false
+theme-name='__custom'
+
+[org/gnome/desktop/wm/keybindings]
+activate-window-menu=@as []
+begin-move=@as []
+begin-resize=@as []
+close=['<Super>q']
+cycle-group=@as []
+cycle-group-backward=@as []
+cycle-panels=@as []
+cycle-panels-backward=@as []
+cycle-windows=@as []
+cycle-windows-backward=@as []
+move-to-monitor-down=@as []
+move-to-monitor-left=@as []
+move-to-monitor-right=@as []
+move-to-monitor-up=@as []
+move-to-workspace-1=@as []
+move-to-workspace-last=@as []
+move-to-workspace-left=@as []
+move-to-workspace-right=@as []
+panel-run-dialog=['<Super>r']
+switch-group=@as []
+switch-group-backward=@as []
+switch-input-source=@as []
+switch-input-source-backward=@as []
+switch-panels=@as []
+switch-panels-backward=@as []
+switch-to-workspace-1=@as []
+switch-to-workspace-last=@as []
+toggle-fullscreen=['<Super>f']
+toggle-maximized=@as []
+
+[org/gnome/desktop/wm/preferences]
+button-layout='close,minimize:appmenu'
+
+[org/gnome/login-screen]
+enable-fingerprint-authentication=true
+enable-smartcard-authentication=true
+enable-switchable-authentication=true
+
+[org/gnome/mutter]
+attach-modal-dialogs=false
+center-new-windows=true
+check-alive-timeout='60000'
+experimental-features=['scale-monitor-framebuffer']
+
+[org/gnome/nautilus/icon-view]
+default-zoom-level='small'
+
+[org/gnome/nautilus/preferences]
+default-folder-viewer='icon-view'
+migrated-gtk-settings=true
+
+[org/gnome/Ptyxis]
+audible-bell=false
+preserve-directory='never'
+restore-session=false
+restore-window-size=false
+window-size=(uint32 80, uint32 24)
+
+[org/gnome/Ptyxis/Shortcuts]
+copy-clipboard='<ctrl><shift>c'
+paste-clipboard='<ctrl><shift>v'
+preferences=''
+primary-menu=''
+select-all='<ctrl><shift>a'
+show-keyboard-shortcuts=''
+tab-menu=''
+toggle-fullscreen=''
+
+[org/gnome/settings-daemon/plugins/housekeeping]
+donation-reminder-enabled=false
+
+[org/gnome/settings-daemon/plugins/media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
+help=@as []
+magnifier=@as []
+magnifier-zoom-in=@as []
+magnifier-zoom-out=@as []
+on-screen-keyboard=@as []
+screenreader=@as []
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Super>Return'
+command='/usr/bin/ptyxis --new-window'
+name='Terminal'
+
+[org/gnome/settings-daemon/plugins/power]
+sleep-inactive-ac-timeout=7200
+
+[org/gnome/shell]
+always-show-log-out=true
+app-picker-layout=['']
+enabled-extensions=['blur-my-shell@aunetx', 'weatheroclock@CleoMenezesJr.github.io', 'just-perfection-desktop@just-perfection', 'caffeine@patapon.info', 'dash-to-dock@micxgx.gmail.com', 'appindicatorsupport@rgcjonas.gmail.com']
+favorite-apps=['org.gnome.Nautilus.desktop', 'org.gnome.Ptyxis.desktop', 'firefox.desktop', 'org.gnome.Software.desktop', 'org.gnome.Settings.desktop', 'anaconda.desktop']
+
+[org/gnome/shell/extensions/weather-oclock]
+weather-after-clock=true
+
+[org/gnome/shell/keybindings]
+focus-active-notification=@as []
+toggle-application-view=@as []
+toggle-message-tray=['<Super>n']
+
+[org/gnome/shell/extensions/blur-my-shell/dash-to-dock]
+blur=true
+brightness=0.59999999999999998
+override-background=false
+pipeline='pipeline_default_rounded'
+sigma=30
+static-blur=true
+style-dash-to-dock=0
+
+[org/gnome/shell/extensions/caffeine]
+show-notifications=false
+
+[org/gnome/shell/extensions/dash-to-dock]
+apply-custom-theme=true
+autohide=true
+custom-background-color=false
+custom-theme-shrink=true
+dash-max-icon-size=42
+disable-overview-on-startup=true
+dock-fixed=false
+dock-position='BOTTOM'
+hot-keys=false
+intellihide-mode='FOCUS_APPLICATION_WINDOWS'
+show-apps-at-top=true
+show-mounts-network=true
+transparency-mode='FIXED'
+
+[org/gnome/shell/extensions/gamemodeshellextension]
+enable-do-not-disturb=false
+show-close-notification=false
+show-icon-only-when-active=true
+show-launch-notification=false
+
+[org/gnome/shell/extensions/just-perfection]
+events-button=false
+quick-settings-night-light=true
+startup-status=0
+support-notifier-showed-version=38
+support-notifier-type=0
+window-demands-attention-focus=true
+workspace-wrap-around=true
+world-clock=false
+
+[org/gnome/software]
+allow-updates=true
+download-updates=false
+download-updates-notify=false
+first-run=false
+
+[org/gnome/TextEditor]
+restore-session=false
+
+[org/gnome/tweaks]
+show-extensions-notice=false
+
+[org/gtk/gtk4/settings/file-chooser]
+show-hidden=true
+sort-directories-first=true

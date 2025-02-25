@@ -1,0 +1,242 @@
+{
+  "policies": {
+    "DisableFeedbackCommands": true,
+    "DisableFirefoxAccount": true,
+    "DisableFirefoxStudies": true,
+    "DisablePocket": true,
+    "DisableTelemetry": true,
+    "DisplayBookmarksToolbar": "newtab",
+    "DisableSetDesktopBackground": true,
+    "DisableDeveloperTools": false,
+    "DontCheckDefaultBrowser": true,
+    "DNSOverHTTPS": {
+      "Enabled": false,
+      "Locked": true
+    },
+    "ExtensionSettings": {
+      "addon@darkreader.org": {
+        "installation_mode": "normal_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/darkreader/latest.xpi",
+        "default_area": "navbar"
+      },
+      "{9a41dee2-b924-4161-a971-7fb35c053a4a}": {
+        "installation_mode": "normal_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/enhanced-h264ify/latest.xpi",
+        "default_area": "navbar"
+      },
+      "{73a6fe31-595d-460b-a920-fcc0f8843232}": {
+        "installation_mode": "normal_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/noscript/latest.xpi",
+        "default_area": "navbar"
+      },
+      "jid1-MnnxcxisBPnSXQ@jetpack": {
+        "installation_mode": "normal_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/privacy-badger17/latest.xpi",
+        "default_area": "navbar"
+      },
+      "{9063c2e9-e07c-4c2c-9646-cfe7ca8d0498}": {
+        "installation_mode": "normal_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/old-reddit-redirect/latest.xpi",
+        "default_area": "navbar"
+      },
+      "uBlock0@raymondhill.net": {
+        "installation_mode": "normal_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi",
+        "default_area": "navbar"
+      }
+    },
+    "FirefoxHome": {
+      "Search": false,
+      "TopSites": false,
+      "SponsoredTopSites": false,
+      "Highlights": false,
+      "Pocket": false,
+      "Stories": false,
+      "SponsoredPocket": false,
+      "SponsoredStories": false,
+      "Snippets": false,
+      "Locked": true
+    },
+    "FirefoxSuggest": {
+      "WebSuggestions": false,
+      "SponsoredSuggestions": false,
+      "ImproveSuggest": false,
+      "Locked": true
+    },
+    "GenerativeAI": {
+      "Enabled": false,
+      "Chatbot": false,
+      "LinkPreviews": false,
+      "TabGroups": false,
+      "Locked": true
+    },
+    "HardwareAcceleration": true,
+    "Homepage": {
+      "URL": "about:blank",
+      "Locked": true,
+      "StartPage": "previous-session"
+    },
+    "HttpsOnlyMode": "enabled",
+    "ManagedBookmarks": [
+      {
+        "toplevel_name": "Stuff"
+      },
+      {
+        "name": "Cockpit",
+        "url": "http://localhost:9090"
+      },
+      {
+        "name": "Pumice",
+        "url": "https://github.com/zearp/pumice-fedora"
+      },
+      {
+        "name": "DDG",
+        "url": "https://duck.com"
+      },
+      {
+        "name": "Phoronix",
+        "url": "https://phoronix.com"
+      },
+      {
+        "name": "fmhy",
+        "children": [
+          {
+            "name": "Privacy",
+            "url": "https://fmhy.net/privacy"
+          },
+          {
+            "name": "Linux/macOS",
+            "url": "https://fmhy.net/linux-macos"
+          },
+          {
+            "name": "Live Sports",
+            "url": "https://fmhy.net/video#live-sports"
+          },
+          {
+            "name": "Live TV",
+            "url": "https://fmhy.net/video#live-tv"
+          }
+        ]
+      }
+    ],
+    "NewTabPage": false,
+    "NoDefaultBookmarks": true,
+    "PasswordManager": {
+      "Enabled": false
+    },
+    "PDFjs": {
+      "Enabled": true
+    },
+    "Preferences": {
+      "app.normandy.enabled": false,
+      "app.shield.optoutstudies.enabled": false,
+      "browser.aboutwelcome.enabled": false,
+      "browser.ai.control.default": "blocked",
+      "browser.ai.control.linkPreviewKeyPoints": "blocked",
+      "browser.ai.control.pdfjsAltText": "blocked",
+      "browser.ai.control.sidebarChatbot": "blocked",
+      "browser.ai.control.smartTabGroups": "blocked",
+      "browser.ai.control.translations": "blocked",
+      "browser.compactmode.show": true,
+      "browser.contentanalysis.default_result": 0,
+      "browser.contentanalysis.enabled": false,
+      "browser.contentblocking.category": "strict",
+      "browser.crashReports.unsubmittedCheck.autoSubmit2": false,
+      "browser.discovery.enabled": false,
+      "browser.download.manager.addToRecentDocs": false,
+      "browser.download.open_pdf_attachments_inline": true,
+      "browser.ml.enable": false,
+      "browser.ml.chat.enabled": false,
+      "browser.ml.chat.menu": false,
+      "browser.ml.linkPreview.enabled": false,
+      "browser.ml.pageAssist.enabled": false,
+      "browser.ml.smartAssist.enabled": false,
+      "browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons": false,
+      "browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features": false,
+      "browser.newtabpage.activity-stream.default.sites": "",
+      "browser.newtabpage.activity-stream.feeds.section.topstories": false,
+      "browser.newtabpage.activity-stream.feeds.telemetry": false,
+      "browser.newtabpage.activity-stream.showSponsored": false,
+      "browser.newtabpage.activity-stream.showSponsoredCheckboxes": false,
+      "browser.newtabpage.activity-stream.showSponsoredTopSites": false,
+      "browser.newtabpage.activity-stream.telemetry": false,
+      "browser.places.speculativeConnect.enabled": false,
+      "browser.preferences.moreFromMozilla": false,
+      "browser.safebrowsing.downloads.remote.enabled": false,
+      "browser.send_pings.enabled": false,
+      "browser.search.suggest.enabled": false,
+      "browser.search.update": false,
+      "browser.search.visualSearch.featureGate": false,
+      "browser.shell.checkDefaultBrowser": false,
+      "browser.startup.homepage_override.mstone": "ignore",
+      "browser.tabs.crashReporting.sendReport": false,
+      "browser.tabs.groups.smart.enabled": false,
+      "browser.uitour.enabled": false,
+      "browser.urlbar.groupLabels.enabled": false,
+      "browser.urlbar.quicksuggest.enabled": false,
+      "browser.urlbar.quicksuggest.mlEnabled": false,
+      "browser.urlbar.speculativeConnect.enabled": false,
+      "browser.urlbar.suggest.engines": false,
+      "browser.urlbar.suggest.searches": false,
+      "browser.urlbar.suggest.quicksuggest.nonsponsored": false,
+      "browser.urlbar.suggest.quicksuggest.sponsored": false,
+      "browser.urlbar.trending.featureGate": false,
+      "datareporting.healthreport.uploadEnabled": false,
+      "datareporting.policy.dataSubmissionEnabled": false,
+      "datareporting.usage.uploadEnabled": false,
+      "extensions.getAddons.showPane": false,
+      "extensions.htmlaboutaddons.recommendations.enabled": false,
+      "extensions.getAddons.cache.enabled": false,
+      "extensions.ml.enabled": false,
+      "geo.provider.use_geoclue": false,
+      "media.gmp-gmpopenh264.autoupdate": true,
+      "media.gmp-gmpopenh264.enabled": true,
+      "media.gmp-gmpopenh264.provider.enabled": true,
+      "media.peerconnection.video.h264_enabled": true,
+      "network.auth.subresource-http-auth-allow": 1,
+      "network.captive-portal-service.enabled": false,
+      "network.connectivity-service.enabled": false,
+      "network.cookie.cookieBehavior": 4,
+      "network.dns.disablePrefetch": true,
+      "network.dns.disablePrefetchFromHTTPS": true,
+      "network.http.referer.XOriginPolicy": 0,
+      "network.http.referer.XOriginTrimmingPolicy": 2,
+      "network.http.speculative-parallel-limit": 0,
+      "network.IDN_show_punycode": true,
+      "network.prefetch-next": false,
+      "pdfjs.enableAltText": false,
+      "pdfjs.enableScripting": false,
+      "permissions.default.desktop-notification": 2,
+      "permissions.default.geo": 2,
+      "places.semanticHistory.featureGate": false,
+      "privacy.antitracking.isolateContentScriptResources": true,
+      "privacy.firstparty.isolate": true,
+      "privacy.globalprivacycontrol.enabled": true,
+      "privacy.trackingprotection.enabled": true,
+      "privacy.trackingprotection.socialtracking.enabled": true,
+      "privacy.resistFingerprinting": true,
+      "privacy.userContext.ui.enabled": true,
+      "security.csp.reporting.enabled": false,
+      "sidebar.revamp": false,
+      "signon.formlessCapture.enabled": false,
+      "signon.privateBrowsingCapture.enabled": false,
+      "toolkit.coverage.opt-out": true,
+      "toolkit.legacyUserProfileCustomizations.stylesheets": true,
+      "toolkit.telemetry.coverage.opt-out": true
+    },
+    "SanitizeOnShutdown": {
+      "Cache": false,
+      "Cookies": false,
+      "Downloads": false,
+      "FormData": false,
+      "History": false,
+      "Sessions": false,
+      "OfflineApps": false,
+      "Locked": false
+    },
+    "SearchEngines": {
+      "Default": "DuckDuckGo",
+      "PreventInstalls": false
+    }
+  }
+}

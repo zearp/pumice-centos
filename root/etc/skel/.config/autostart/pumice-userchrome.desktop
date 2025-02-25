@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Pumice userChrome.css Installer
+Comment=Copies Pumice's userChrome.css into the default Firefox profile once it exists; no-op after that
+Exec=/usr/local/share/pumice/pumice-userchrome
+NoDisplay=true
+X-GNOME-Autostart-enabled=true
