@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Pumice App Grid Sort
+Comment=Resets the GNOME app grid to alphabetical order on every login
+Exec=/usr/bin/gsettings set org.gnome.shell app-picker-layout "[]"
+OnlyShowIn=GNOME;
+NoDisplay=true
+X-GNOME-Autostart-enabled=true
