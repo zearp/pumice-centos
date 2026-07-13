@@ -166,6 +166,10 @@
       "browser.startup.homepage_override.mstone": "ignore",
       "browser.tabs.crashReporting.sendReport": false,
       "browser.tabs.groups.smart.enabled": false,
+      "browser.uidensity": {
+        "Value": 1,
+        "Status": "locked"
+      },
       "browser.uitour.enabled": false,
       "browser.urlbar.groupLabels.enabled": false,
       "browser.urlbar.quicksuggest.enabled": false,
