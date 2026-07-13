@@ -15,32 +15,27 @@
     },
     "ExtensionSettings": {
       "addon@darkreader.org": {
-        "installation_mode": "normal_installed",
+        "installation_mode": "force_installed",
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/darkreader/latest.xpi",
         "default_area": "navbar"
       },
       "{9a41dee2-b924-4161-a971-7fb35c053a4a}": {
-        "installation_mode": "normal_installed",
+        "installation_mode": "force_installed",
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/enhanced-h264ify/latest.xpi",
         "default_area": "navbar"
       },
       "{73a6fe31-595d-460b-a920-fcc0f8843232}": {
-        "installation_mode": "normal_installed",
+        "installation_mode": "force_installed",
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/noscript/latest.xpi",
         "default_area": "navbar"
       },
       "jid1-MnnxcxisBPnSXQ@jetpack": {
-        "installation_mode": "normal_installed",
+        "installation_mode": "force_installed",
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/privacy-badger17/latest.xpi",
         "default_area": "navbar"
       },
-      "{9063c2e9-e07c-4c2c-9646-cfe7ca8d0498}": {
-        "installation_mode": "normal_installed",
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/old-reddit-redirect/latest.xpi",
-        "default_area": "navbar"
-      },
       "uBlock0@raymondhill.net": {
-        "installation_mode": "normal_installed",
+        "installation_mode": "force_installed",
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi",
         "default_area": "navbar"
       }
@@ -196,7 +191,6 @@
       "network.auth.subresource-http-auth-allow": 1,
       "network.captive-portal-service.enabled": false,
       "network.connectivity-service.enabled": false,
-      "network.cookie.cookieBehavior": 4,
       "network.dns.disablePrefetch": true,
       "network.dns.disablePrefetchFromHTTPS": true,
       "network.http.referer.XOriginPolicy": 0,
