@@ -170,7 +170,7 @@
       "browser.startup.homepage_override.mstone": "ignore",
       "browser.tabs.crashReporting.sendReport": false,
       "browser.tabs.firefox-view": false,
-      "browser.tabs.groups.smart.enabled": false,
+      "browser.tabs.groups.enabled": false,
       "browser.uidensity": {
         "Value": 1,
         "Status": "locked"
