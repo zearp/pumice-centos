@@ -149,7 +149,6 @@
 		<package name="mesa-vulkan-drivers"/>
 		<package name="microcode_ctl"/>
 		<package name="loupe"/>
-		<package name="mpv"/>
 		<package name="mt7xxx-firmware"/>
 		<package name="nautilus"/>
 		<package name="ncdu"/>
