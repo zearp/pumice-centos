@@ -1,5 +1,11 @@
 {
   "policies": {
+    "AIControls": {
+      "Default": {
+        "Value": "blocked",
+        "Locked": true
+      }
+    },
     "DisableFeedbackCommands": true,
     "DisableFirefoxAccounts": true,
     "DisableFirefoxStudies": true,
@@ -83,7 +89,7 @@
       },
       {
         "name": "Pumice",
-        "url": "https://github.com/zearp/pumice-fedora"
+        "url": "https://github.com/zearp/pumice-centos"
       },
       {
         "name": "DDG",
@@ -92,6 +98,14 @@
       {
         "name": "Phoronix",
         "url": "https://phoronix.com"
+      },
+      {
+        "name": "CentOS Docs",
+        "url": "https://docs.centos.org/centos-stream-docs/"
+      },
+      {
+        "name": "GNOME Extensions",
+        "url": "https://extensions.gnome.org"
       },
       {
         "name": "fmhy",
@@ -113,34 +127,27 @@
             "url": "https://fmhy.net/video#live-tv"
           }
         ]
-      },
-      {
-        "name": "GNOME Extensions",
-        "url": "https://extensions.gnome.org"
       }
     ],
     "NewTabPage": false,
     "NoDefaultBookmarks": true,
     "OverrideFirstRunPage": "",
     "OverridePostUpdatePage": "",
-    "PasswordManager": {
-      "Enabled": false
+    "PasswordManagerEnabled": false,
+    "Permissions": {
+      "Location": {
+        "BlockNewRequests": true
+      },
+      "Notifications": {
+        "BlockNewRequests": true
+      }
     },
     "PDFjs": {
       "Enabled": true,
       "EnablePermissions": false
     },
     "Preferences": {
-      "app.normandy.enabled": false,
-      "app.shield.optoutstudies.enabled": false,
       "browser.aboutwelcome.enabled": false,
-      "browser.ai.control.default": "blocked",
-      "browser.ai.control.linkPreviewKeyPoints": "blocked",
-      "browser.ai.control.pdfjsAltText": "blocked",
-      "browser.ai.control.sidebarChatbot": "blocked",
-      "browser.ai.control.smartTabGroups": "blocked",
-      "browser.ai.control.translations": "blocked",
-      "browser.compactmode.show": true,
       "browser.contentblocking.category": "strict",
       "browser.crashReports.unsubmittedCheck.autoSubmit2": false,
       "browser.discovery.enabled": false,
@@ -179,7 +186,7 @@
       "browser.tabs.groups.enabled": false,
       "browser.uidensity": {
         "Value": 1,
-        "Status": "locked"
+        "Status": "default"
       },
       "browser.urlbar.addons.featureGate": false,
       "browser.urlbar.amp.featureGate": false,
@@ -201,15 +208,7 @@
       "browser.urlbar.wikipedia.featureGate": false,
       "browser.urlbar.yelp.featureGate": false,
       "browser.urlbar.yelpRealtime.featureGate": false,
-      "datareporting.healthreport.uploadEnabled": {
-        "Value": false,
-        "Status": "locked"
-      },
       "datareporting.policy.dataSubmissionEnabled": {
-        "Value": false,
-        "Status": "locked"
-      },
-      "datareporting.usage.uploadEnabled": {
         "Value": false,
         "Status": "locked"
       },
@@ -239,25 +238,17 @@
       "network.prefetch-next": false,
       "pdfjs.enableAltText": false,
       "pdfjs.enableScripting": false,
-      "permissions.default.desktop-notification": 2,
-      "permissions.default.geo": 2,
-      "permissions.manager.defaultsUrl": "",
       "places.semanticHistory.featureGate": false,
-      "privacy.firstparty.isolate": true,
       "privacy.globalprivacycontrol.enabled": true,
-      "privacy.resistFingerprinting": true,
       "privacy.userContext.enabled": true,
       "privacy.userContext.ui.enabled": true,
-      "security.cert_pinning.enforcement_level": 2,
       "security.csp.reporting.enabled": false,
       "security.ssl.require_safe_negotiation": true,
       "security.tls.enable_0rtt_data": false,
       "sidebar.revamp": false,
       "signon.formlessCapture.enabled": false,
       "signon.privateBrowsingCapture.enabled": false,
-      "toolkit.coverage.opt-out": true,
-      "toolkit.legacyUserProfileCustomizations.stylesheets": true,
-      "toolkit.telemetry.coverage.opt-out": true
+      "toolkit.legacyUserProfileCustomizations.stylesheets": true
     },
     "SanitizeOnShutdown": {
       "Cache": false,
