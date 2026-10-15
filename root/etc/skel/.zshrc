@@ -19,7 +19,7 @@ setopt hist_ignore_space
 
 # setup simple aliases
 #
-alias cat="batcat -p"
+alias cat="bat -p"
 alias diff="diff --color=auto"
 alias fastfetch="fastfetch -l small"
 alias grep="rg"
