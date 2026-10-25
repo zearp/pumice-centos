@@ -25,7 +25,8 @@ sudo podman run --privileged --rm -it --network=host -v /dev:/dev -v $PWD:/code:
 ### Download and set workers
 ```
 rpm -i https://www.elrepo.org/elrepo-release-10.el10.elrepo.noarch.rpm
-dnf -y install epel-release && dnf -y install kiwi policycoreutils dosfstools erofs-utils isomd5sum qemu-img xorriso nano && dnf -y --refresh update
+dnf -y install epel-release && /usr/bin/crb enable
+dnf -y install kiwi policycoreutils dosfstools erofs-utils isomd5sum qemu-img xorriso nano && dnf -y --refresh update
 sed -i "s/NPROC_PLACEHOLDER/$(nproc)/" config.xml
 ```
 
